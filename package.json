@@ -1,0 +1,21 @@
+{
+  "name": "spacenest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddhantprateek/spacenest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddhantprateek/spacenest/issues"
+  },
+  "homepage": "https://github.com/siddhantprateek/spacenest#readme"
+}
