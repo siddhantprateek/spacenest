@@ -1,0 +1,1 @@
+export { default as SPACEX } from './pexels-spacex-23764.jpg';
