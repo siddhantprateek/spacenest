@@ -7,6 +7,8 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -19,4 +21,13 @@ header {
     list-style: none;
     font-weight: 500;
     cursor: pointer;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    height: 4rem;
 }

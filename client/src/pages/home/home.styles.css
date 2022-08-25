@@ -53,3 +53,12 @@
     color: rgb(223, 223, 223);
     text-decoration: none;
 }
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin-top: -20rem;
+    height: 20rem;
+}

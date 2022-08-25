@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./home.styles.css";
-import { LaunchCard } from "../../components";
 import { Link } from "react-router-dom";
-import { DOWN } from "../../assets";
+import { LaunchCard } from "../../components";
+
+import "./launches.styles.css";
 
 interface LaunchInterface {
   images: {
@@ -25,7 +25,7 @@ interface LaunchInterface {
   id: string;
 }
 
-const Home = () => {
+const Launches = () => {
   const [data, setData] = useState<any>([]);
   useEffect(() => {
     axios
@@ -33,28 +33,16 @@ const Home = () => {
       .then((res) => setData(res.data))
       .catch((error) => console.error(error));
   }, []);
-
-  const topThreeLaunches = data?.slice(0, 3);
-  console.log(topThreeLaunches);
-
   return (
-    <div className="pages">
-      <div className="home-page-bg"> </div>
-      <div className="hero-content">
-        <div>
-          <p>UPCOMING EVENTS</p>
-          <h1>SPACEX</h1>
-          <img src={DOWN} alt="" />
-        </div>
-      </div>
+    <div className="launches-page">
       <div className="section-2">
         <div className="top-launch">
-          <h1>TOP SPACEX LAUNCHES</h1>
+          <h1>ALL SPACEX LAUNCHES</h1>
         </div>
       </div>
       <div className="launch-content">
         <div className="top-3-launches">
-          {topThreeLaunches.map((TopLaunch: LaunchInterface) => (
+          {data.map((TopLaunch: LaunchInterface) => (
             <Link to={`/launch/${TopLaunch.id}`}>
               <LaunchCard
                 images={TopLaunch.images}
@@ -70,4 +58,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Launches;

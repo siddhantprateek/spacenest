@@ -1,0 +1,81 @@
+.launch-header {
+    padding: 4rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.launch-header h1 {
+    border: 1px solid white;
+    width: fit-content;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all .5s;
+}
+.launch-header h1:hover {
+    color: #000000;
+    background-color: white;
+}
+.launch-page {
+    margin-top: 10rem;
+}
+.launch-thumb {
+    height: 50rem;
+    width: 100%;
+}
+
+.thumb-cover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    height: 50rem;
+    width: 100%;
+    position: relative;
+    margin-top: -50rem;
+}
+
+.launch-content-data {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -30rem;
+    height: 30rem;
+}
+
+.launch-content-details {
+    text-align: center;
+    width: 70rem;
+}
+
+.launch-content-details h1 {
+    font-weight: 600;
+    line-height: 4.5rem;
+    font-size: 4rem;
+}
+.launch-content-details p {
+    margin-top: 3rem;
+}
+
+.other-contents {
+    display: flex;
+    justify-content: center;
+}
+
+.content-dim {
+    width: 70rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 35rem;
+    margin-bottom: 4rem;
+}
+
+.box h2 {
+    font-weight: 500;
+}
+
+.box p {
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 4rem;
+}
